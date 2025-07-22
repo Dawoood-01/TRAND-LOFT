@@ -1,0 +1,263 @@
+{
+  "products": {
+    "smartwatches": [
+      {
+        "id": 1,
+        "name": "TRAND Pro Max",
+        "category": "Smart Watches",
+        "subcategory": "AMOLED Display",
+        "price": 2999,
+        "originalPrice": 3999,
+        "discount": "25% OFF",
+        "rating": 4.5,
+        "reviews": 1247,
+        "features": [
+          "BT Calling",
+          "AMOLED Display",
+          "Heart Rate Monitor",
+          "50+ Sports Modes"
+        ],
+        "colors": [
+          "Black",
+          "Silver",
+          "Rose Gold"
+        ],
+        "image": "/images/smartwatch-pro-max.jpg",
+        "description": "Premium smartwatch with AMOLED display and advanced health tracking"
+      },
+      {
+        "id": 2,
+        "name": "TRAND Fit Ultra",
+        "category": "Smart Watches",
+        "subcategory": "Fitness Focus",
+        "price": 1999,
+        "originalPrice": 2499,
+        "discount": "20% OFF",
+        "rating": 4.3,
+        "reviews": 892,
+        "features": [
+          "100+ Workout Modes",
+          "SpO2 Monitor",
+          "Water Resistant"
+        ],
+        "colors": [
+          "Black",
+          "Blue",
+          "Green"
+        ],
+        "image": "/images/smartwatch-fit-ultra.jpg",
+        "description": "Fitness-focused smartwatch with comprehensive health monitoring"
+      },
+      {
+        "id": 3,
+        "name": "TRAND Classic Round",
+        "category": "Smart Watches",
+        "subcategory": "Round Dial",
+        "price": 1599,
+        "originalPrice": 1999,
+        "discount": "20% OFF",
+        "rating": 4.2,
+        "reviews": 654,
+        "features": [
+          "Round Display",
+          "7-Day Battery",
+          "Always-On Display"
+        ],
+        "colors": [
+          "Black",
+          "Silver"
+        ],
+        "image": "/images/smartwatch-classic-round.jpg",
+        "description": "Classic round smartwatch with elegant design"
+      }
+    ],
+    "earbuds": [
+      {
+        "id": 4,
+        "name": "TRAND Buds Pro",
+        "category": "Earbuds",
+        "subcategory": "ANC",
+        "price": 1499,
+        "originalPrice": 1999,
+        "discount": "25% OFF",
+        "rating": 4.4,
+        "reviews": 2156,
+        "features": [
+          "Active Noise Cancellation",
+          "50Hr Playback",
+          "Quad Mic ENC"
+        ],
+        "colors": [
+          "Black",
+          "White",
+          "Blue"
+        ],
+        "image": "/images/earbuds-pro.jpg",
+        "description": "Premium TWS earbuds with active noise cancellation"
+      },
+      {
+        "id": 5,
+        "name": "TRAND Buds Gaming",
+        "category": "Earbuds",
+        "subcategory": "Gaming",
+        "price": 999,
+        "originalPrice": 1299,
+        "discount": "23% OFF",
+        "rating": 4.3,
+        "reviews": 1643,
+        "features": [
+          "Low Latency",
+          "Gaming Mode",
+          "RGB LED"
+        ],
+        "colors": [
+          "Black",
+          "Red"
+        ],
+        "image": "/images/earbuds-gaming.jpg",
+        "description": "Gaming earbuds with ultra-low latency for competitive gaming"
+      },
+      {
+        "id": 6,
+        "name": "TRAND Buds Lite",
+        "category": "Earbuds",
+        "subcategory": "Budget",
+        "price": 799,
+        "originalPrice": 999,
+        "discount": "20% OFF",
+        "rating": 4.1,
+        "reviews": 987,
+        "features": [
+          "25Hr Playback",
+          "Touch Control",
+          "IPX4"
+        ],
+        "colors": [
+          "Black",
+          "White"
+        ],
+        "image": "/images/earbuds-lite.jpg",
+        "description": "Affordable TWS earbuds with essential features"
+      }
+    ],
+    "accessories": [
+      {
+        "id": 7,
+        "name": "TRAND Wireless Charger",
+        "category": "Accessories",
+        "subcategory": "Chargers",
+        "price": 599,
+        "originalPrice": 799,
+        "discount": "25% OFF",
+        "rating": 4.2,
+        "reviews": 445,
+        "features": [
+          "15W Fast Charging",
+          "LED Indicator",
+          "Over-current Protection"
+        ],
+        "colors": [
+          "Black",
+          "White"
+        ],
+        "image": "/images/wireless-charger.jpg",
+        "description": "Fast wireless charging pad for smartphones and earbuds"
+      },
+      {
+        "id": 8,
+        "name": "TRAND Watch Strap Premium",
+        "category": "Accessories",
+        "subcategory": "Watch Straps",
+        "price": 399,
+        "originalPrice": 499,
+        "discount": "20% OFF",
+        "rating": 4.0,
+        "reviews": 234,
+        "features": [
+          "Premium Material",
+          "Universal Fit",
+          "Quick Release"
+        ],
+        "colors": [
+          "Black",
+          "Brown",
+          "Blue"
+        ],
+        "image": "/images/watch-strap.jpg",
+        "description": "Premium quality replacement strap for smartwatches"
+      }
+    ]
+  },
+  "categories": {
+    "Smart Watches": {
+      "subcategories": [
+        "AMOLED Display Smart Watches",
+        "Round Dial Smart Watches",
+        "Metallic & Leather Smart Watches",
+        "BT Calling Smart Watches",
+        "Smart Watches for Men",
+        "Smart Watches for Women",
+        "Smart Watches Under \u20b92000",
+        "Smart Watches Under \u20b93000",
+        "Smart Watches Under \u20b94000",
+        "Smart Watches Under \u20b95000"
+      ]
+    },
+    "Earbuds": {
+      "subcategories": [
+        "ANC Earbuds",
+        "Gaming Earbuds",
+        "Earbuds Under \u20b91000",
+        "Earbuds Under \u20b91500",
+        "Earbuds Under \u20b92000",
+        "Earbuds Under \u20b92500"
+      ]
+    },
+    "Accessories": {
+      "subcategories": [
+        "Wireless Chargers",
+        "Watch Straps",
+        "Phone Cases",
+        "Cables"
+      ]
+    }
+  },
+  "banners": [
+    {
+      "id": 1,
+      "title": "Summer Sale",
+      "subtitle": "Up to 50% OFF on Smart Watches",
+      "cta": "Shop Now",
+      "background": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+    },
+    {
+      "id": 2,
+      "title": "New Launch",
+      "subtitle": "TRAND Pro Max with AMOLED Display",
+      "cta": "Explore",
+      "background": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+    },
+    {
+      "id": 3,
+      "title": "Best Sellers",
+      "subtitle": "Premium TWS Earbuds Collection",
+      "cta": "View All",
+      "background": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+    }
+  ],
+  "content": {
+    "brand": "TRAND LOFT",
+    "tagline": "India's Trusted Smart Wearable Brand",
+    "hero": {
+      "title": "Discover Smart Technology",
+      "subtitle": "Premium smartwatches, earbuds, and accessories designed for the modern lifestyle",
+      "cta": "Shop Collection"
+    },
+    "features": [
+      "Free Shipping on Orders Above \u20b9999",
+      "1 Year Warranty",
+      "Easy Returns & Exchange",
+      "24/7 Customer Support"
+    ]
+  }
+}

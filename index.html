@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAND LOFT - India's Trusted Smart Wearable Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Promotional Banner -->
+    <div class="promo-banner">
+        <div class="container">
+            <p><i class="fas fa-shipping-fast"></i> Free Shipping on Orders Above ₹999 | <i class="fas fa-shield-alt"></i> 1 Year Warranty | <i class="fas fa-headset"></i> 24/7 Support</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>TRAND LOFT</h1>
+                    <span class="tagline">Smart Wearables</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav" id="mainNav">
+                    <ul class="nav__list">
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">Smart Watches <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown__content">
+                                <div class="dropdown__category">
+                                    <h4>By Display</h4>
+                                    <a href="#">AMOLED Display</a>
+                                    <a href="#">Round Dial</a>
+                                    <a href="#">Metallic & Leather</a>
+                                </div>
+                                <div class="dropdown__category">
+                                    <h4>By Price</h4>
+                                    <a href="#">Under ₹2000</a>
+                                    <a href="#">Under ₹3000</a>
+                                    <a href="#">Under ₹5000</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">Earbuds <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown__content">
+                                <div class="dropdown__category">
+                                    <h4>By Type</h4>
+                                    <a href="#">ANC Earbuds</a>
+                                    <a href="#">Gaming Earbuds</a>
+                                </div>
+                                <div class="dropdown__category">
+                                    <h4>By Price</h4>
+                                    <a href="#">Under ₹1000</a>
+                                    <a href="#">Under ₹2000</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__item"><a href="#" class="nav__link">Accessories</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products..." class="search-input" id="searchInput">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Header Actions -->
+                <div class="header__actions">
+                    <button class="action-btn"><i class="fas fa-user"></i></button>
+                    <button class="action-btn" id="wishlistBtn">
+                        <i class="fas fa-heart"></i>
+                        <span class="badge">0</span>
+                    </button>
+                    <button class="action-btn" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge" id="cartCount">0</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__slider" id="heroSlider">
+            <div class="hero__slide active">
+                <div class="container">
+                    <div class="hero__content">
+                        <h2>Summer Sale</h2>
+                        <p>Up to 50% OFF on Smart Watches</p>
+                        <button class="btn btn--primary">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide">
+                <div class="container">
+                    <div class="hero__content">
+                        <h2>New Launch</h2>
+                        <p>TRAND Pro Max with AMOLED Display</p>
+                        <button class="btn btn--primary">Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide">
+                <div class="container">
+                    <div class="hero__content">
+                        <h2>Best Sellers</h2>
+                        <p>Premium TWS Earbuds Collection</p>
+                        <button class="btn btn--primary">View All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__nav">
+            <button class="hero__nav-btn active" data-slide="0"></button>
+            <button class="hero__nav-btn" data-slide="1"></button>
+            <button class="hero__nav-btn" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories__grid">
+                <div class="category-card" data-category="smartwatches">
+                    <div class="category-card__icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Smart Watches</h3>
+                    <p>Advanced features & elegant design</p>
+                    <span class="category-card__arrow"><i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="category-card" data-category="earbuds">
+                    <div class="category-card__icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>TWS Earbuds</h3>
+                    <p>Premium sound & active noise cancellation</p>
+                    <span class="category-card__arrow"><i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="category-card" data-category="accessories">
+                    <div class="category-card__icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Accessories</h3>
+                    <p>Chargers, straps & more</p>
+                    <span class="category-card__arrow"><i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters & Products Section -->
+    <section class="products">
+        <div class="container">
+            <div class="products__header">
+                <h2 class="section-title">All Products</h2>
+                <div class="filters">
+                    <select class="filter-select" id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="smartwatches">Smart Watches</option>
+                        <option value="earbuds">Earbuds</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                    <select class="filter-select" id="sortFilter">
+                        <option value="featured">Sort by: Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Rating: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products__grid" id="productsGrid">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>About TRAND LOFT</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Newsletter</h5>
+                        <div class="newsletter__form">
+                            <input type="email" placeholder="Your email">
+                            <button class="btn btn--primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 TRAND LOFT. All rights reserved. | India's Trusted Smart Wearable Brand</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-sidebar__header">
+            <h3>Shopping Cart</h3>
+            <button class="cart-sidebar__close" id="closeSidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-sidebar__content" id="cartContent">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-sidebar__footer" id="cartFooter" style="display: none;">
+            <div class="cart-total">
+                <span>Total: ₹<span id="cartTotal">0</span></span>
+            </div>
+            <button class="btn btn--primary btn--full-width">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal">
+            <div class="modal__header">
+                <button class="modal__close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content" id="modalContent">
+                <!-- Product details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

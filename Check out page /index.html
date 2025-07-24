@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Checkout - 3D Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fixed Header with Progress -->
+    <header class="checkout-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h2>ShopLux</h2>
+                </div>
+                <div class="progress-indicator">
+                    <div class="progress-step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <span>Address</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="2">
+                        <div class="step-number">2</div>
+                        <span>Payment</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="3">
+                        <div class="step-number">3</div>
+                        <span>Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Checkout Container -->
+    <main class="checkout-main">
+        <div class="container">
+            <div class="checkout-grid">
+                <!-- Left Column: Forms -->
+                <div class="checkout-forms">
+                    <!-- Address Section -->
+                    <section class="checkout-section active" id="address-section">
+                        <div class="section-header">
+                            <h2>Shipping Address</h2>
+                            <p>Enter your delivery information</p>
+                        </div>
+                        
+                        <form class="checkout-form" id="address-form">
+                            <div class="form-row">
+                                <div class="form-group floating-label">
+                                    <input type="text" id="firstName" class="form-control" required>
+                                    <label for="firstName">First Name</label>
+                                    <div class="form-validation"></div>
+                                </div>
+                                <div class="form-group floating-label">
+                                    <input type="text" id="lastName" class="form-control" required>
+                                    <label for="lastName">Last Name</label>
+                                    <div class="form-validation"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group floating-label">
+                                <input type="email" id="email" class="form-control" required>
+                                <label for="email">Email Address</label>
+                                <div class="form-validation"></div>
+                            </div>
+                            
+                            <div class="form-group floating-label">
+                                <input type="tel" id="phone" class="form-control" required>
+                                <label for="phone">Phone Number</label>
+                                <div class="form-validation"></div>
+                            </div>
+                            
+                            <div class="form-group floating-label">
+                                <input type="text" id="address" class="form-control" required>
+                                <label for="address">Street Address</label>
+                                <div class="form-validation"></div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group floating-label">
+                                    <input type="text" id="city" class="form-control" required>
+                                    <label for="city">City</label>
+                                    <div class="form-validation"></div>
+                                </div>
+                                <div class="form-group floating-label">
+                                    <select id="state" class="form-control" required>
+                                        <option value=""></option>
+                                    </select>
+                                    <label for="state">State</label>
+                                    <div class="form-validation"></div>
+                                </div>
+                                <div class="form-group floating-label">
+                                    <input type="text" id="zipCode" class="form-control" required>
+                                    <label for="zipCode">ZIP Code</label>
+                                    <div class="form-validation"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group floating-label">
+                                <select id="country" class="form-control" required>
+                                    <option value=""></option>
+                                </select>
+                                <label for="country">Country</label>
+                                <div class="form-validation"></div>
+                            </div>
+                            
+                            <div class="shipping-options">
+                                <h3>Shipping Method</h3>
+                                <div class="shipping-grid" id="shipping-options">
+                                    <!-- Shipping options will be populated by JS -->
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- Payment Section -->
+                    <section class="checkout-section" id="payment-section">
+                        <div class="section-header">
+                            <h2>Payment Information</h2>
+                            <p>Secure payment processing</p>
+                        </div>
+                        
+                        <div class="payment-methods">
+                            <div class="payment-method active" data-method="card">
+                                <div class="method-icon">💳</div>
+                                <span>Credit/Debit Card</span>
+                            </div>
+                            <div class="payment-method" data-method="paypal">
+                                <div class="method-icon">🅿️</div>
+                                <span>PayPal</span>
+                            </div>
+                            <div class="payment-method" data-method="apple">
+                                <div class="method-icon">🍎</div>
+                                <span>Apple Pay</span>
+                            </div>
+                        </div>
+                        
+                        <form class="checkout-form" id="payment-form">
+                            <div class="payment-content" id="card-payment">
+                                <div class="form-group floating-label">
+                                    <input type="text" id="cardNumber" class="form-control" required maxlength="19">
+                                    <label for="cardNumber">Card Number</label>
+                                    <div class="form-validation"></div>
+                                </div>
+                                
+                                <div class="form-group floating-label">
+                                    <input type="text" id="cardName" class="form-control" required>
+                                    <label for="cardName">Cardholder Name</label>
+                                    <div class="form-validation"></div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group floating-label">
+                                        <input type="text" id="expiry" class="form-control" required maxlength="5" placeholder="MM/YY">
+                                        <label for="expiry">Expiry Date</label>
+                                        <div class="form-validation"></div>
+                                    </div>
+                                    <div class="form-group floating-label">
+                                        <input type="text" id="cvv" class="form-control" required maxlength="4">
+                                        <label for="cvv">CVV</label>
+                                        <div class="form-validation"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-content hidden" id="paypal-payment">
+                                <div class="paypal-info">
+                                    <p>You will be redirected to PayPal to complete your payment securely.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-content hidden" id="apple-payment">
+                                <div class="apple-pay-info">
+                                    <p>Use Touch ID or Face ID to pay with Apple Pay.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- Review Section -->
+                    <section class="checkout-section" id="review-section">
+                        <div class="section-header">
+                            <h2>Order Review</h2>
+                            <p>Confirm your order details</p>
+                        </div>
+                        
+                        <div class="review-content">
+                            <div class="review-address">
+                                <h3>Shipping Address</h3>
+                                <div id="review-address-content">
+                                    <!-- Address details will be populated by JS -->
+                                </div>
+                            </div>
+                            
+                            <div class="review-payment">
+                                <h3>Payment Method</h3>
+                                <div id="review-payment-content">
+                                    <!-- Payment details will be populated by JS -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Navigation Buttons -->
+                    <div class="checkout-navigation">
+                        <button type="button" class="btn btn-secondary btn-back hidden" id="back-btn">
+                            <span>← Back</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-next" id="next-btn">
+                            <span>Continue to Payment →</span>
+                            <div class="btn-loading hidden">
+                                <div class="spinner"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Order Summary -->
+                <aside class="order-summary">
+                    <div class="summary-card">
+                        <div class="summary-header">
+                            <h3>Order Summary</h3>
+                            <button class="summary-toggle" id="summary-toggle">
+                                <span class="toggle-text">Show</span>
+                                <span class="toggle-icon">▼</span>
+                            </button>
+                        </div>
+                        
+                        <div class="summary-content" id="summary-content">
+                            <div class="order-items" id="order-items">
+                                <!-- Order items will be populated by JS -->
+                            </div>
+                            
+                            <div class="order-totals">
+                                <div class="total-row">
+                                    <span>Subtotal:</span>
+                                    <span id="subtotal">$0.00</span>
+                                </div>
+                                <div class="total-row">
+                                    <span>Shipping:</span>
+                                    <span id="shipping-cost">$0.00</span>
+                                </div>
+                                <div class="total-row">
+                                    <span>Tax:</span>
+                                    <span id="tax-amount">$0.00</span>
+                                </div>
+                                <div class="total-row total-final">
+                                    <span>Total:</span>
+                                    <span id="final-total">$0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal hidden" id="success-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="success-animation">
+                <div class="checkmark">
+                    <svg viewBox="0 0 52 52">
+                        <circle cx="26" cy="26" r="25" fill="none"/>
+                        <path fill="none" d="m14,26l8,8l16,-16"/>
+                    </svg>
+                </div>
+            </div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Thank you for your purchase. You will receive a confirmation email shortly.</p>
+            <button class="btn btn-primary" onclick="location.reload()">Place Another Order</button>
+        </div>
+    </div>
+
+    <!-- Floating Action Button (Mobile) -->
+    <div class="fab hidden" id="mobile-fab">
+        <button class="fab-button">
+            <span class="fab-text">Complete Order</span>
+            <span class="fab-icon">→</span>
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

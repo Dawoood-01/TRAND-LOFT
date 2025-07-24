@@ -1,3 +1,10 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment summary </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 <!-- Payment Section -->
                     <section class="checkout-section" id="payment-section">
                         <div class="section-header">

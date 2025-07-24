@@ -811,12 +811,9 @@ body {
 
 /* Header */
 .header {
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: var(--box-shadow);
+  background-image: url('https://github.com/Dawoood-01/TRAND-LOFT/raw/main/IMG-20250724-WA0001.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .header__content {

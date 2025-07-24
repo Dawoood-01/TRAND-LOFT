@@ -817,12 +817,10 @@ body {
 }
 
 .header__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 0;
-  gap: 20px;
-}
+  background-image: url('https://github.com/Dawoood-01/TRAND-LOFT/raw/main/IMG-20250724-WA0001.jpg');
+  background-size: cover;
+  background-position: center;
+  }
 
 /* Logo */
 .logo {
